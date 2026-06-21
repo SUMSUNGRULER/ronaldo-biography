@@ -1,0 +1,157 @@
+export interface TimelineEntry {
+  id: string;
+  club: string;
+  period: string;
+  years: string;
+  league: string;
+  flag: string;
+  color: string;
+  highlights: string[];
+  goals: string;
+  apps: string;
+  trophies: string[];
+}
+
+export const timelineData: TimelineEntry[] = [
+  {
+    id: 'sporting-cp',
+    club: 'Sporting CP',
+    period: 'Academy & Professional Debut',
+    years: '1997 / 2002–2003',
+    league: 'Liga Portugal',
+    flag: '🇵🇹',
+    color: 'from-green-800 to-green-600',
+    highlights: [
+      'Joined Sporting CP academy aged 12 in 1997',
+      'Signed first professional contract in 2002',
+      'Impressed Manchester United in pre-season friendly at Estádio José Alvalade',
+      'Sir Alex Ferguson\'s players demanded he sign Ronaldo on the spot',
+      'Made senior debut aged 17 — the first player born in the 1980s to play for Sporting\'s first team',
+    ],
+    goals: '5',
+    apps: '31',
+    trophies: [],
+  },
+  {
+    id: 'man-utd-first',
+    club: 'Manchester United',
+    period: 'Rise to Global Superstardom',
+    years: '2003–2009',
+    league: 'Premier League',
+    flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
+    color: 'from-red-900 to-red-700',
+    highlights: [
+      'Signed for a then-British record £12.24M fee, aged 18',
+      'Won his first Premier League title in 2006–07',
+      'Scored 42 goals in 2007–08 — one of the greatest individual seasons in PL history',
+      'Won the UEFA Champions League in Moscow 2008, scoring in the penalty shootout',
+      'Won the Ballon d\'Or for the first time in 2008',
+      'Named PFA Players\' Player of the Year twice (2007, 2008)',
+    ],
+    goals: '118',
+    apps: '292',
+    trophies: ['Premier League ×3', 'UEFA Champions League', 'FA Cup', 'League Cup ×2', 'Community Shield ×2', 'Ballon d\'Or 2008'],
+  },
+  {
+    id: 'real-madrid',
+    club: 'Real Madrid',
+    period: 'The Golden Decade',
+    years: '2009–2018',
+    league: 'La Liga',
+    flag: '🇪🇸',
+    color: 'from-purple-900 to-purple-700',
+    highlights: [
+      'Joined for a then-world-record €94 million fee',
+      'Became Real Madrid\'s all-time top scorer with 450 goals',
+      'Won four UEFA Champions League titles (2014, 2016, 2017, 2018)',
+      'Scored 50+ La Liga goals in a single season',
+      'Won four Ballon d\'Or awards during his tenure',
+      'First player in history to score 100 goals in European club competition',
+      'Scored 450 goals in 438 appearances — better than one per game',
+    ],
+    goals: '450',
+    apps: '438',
+    trophies: ['La Liga ×2', 'UEFA Champions League ×4', 'Copa del Rey ×2', 'Spanish Super Cup ×4', 'Club World Cup ×3', 'UEFA Super Cup ×2', 'Ballon d\'Or ×4'],
+  },
+  {
+    id: 'juventus',
+    club: 'Juventus',
+    period: 'The Italian Chapter',
+    years: '2018–2021',
+    league: 'Serie A',
+    flag: '🇮🇹',
+    color: 'from-gray-800 to-gray-600',
+    highlights: [
+      'Signed for €112 million — the largest fee ever paid for a player over 30',
+      'Won two consecutive Serie A titles (2019, 2020)',
+      'First player to score in 11 consecutive UEFA Champions League group stage matches',
+      'Hat-trick vs. Atletico Madrid to overturn a 2-0 first-leg deficit',
+      'Scored 101 goals in just 134 appearances',
+      'Became the first player to win league titles in England, Spain, and Italy',
+    ],
+    goals: '101',
+    apps: '134',
+    trophies: ['Serie A ×2', 'Coppa Italia', 'Supercoppa Italiana'],
+  },
+  {
+    id: 'man-utd-return',
+    club: 'Manchester United (Return)',
+    period: 'The Homecoming',
+    years: '2021–2022',
+    league: 'Premier League',
+    flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
+    color: 'from-red-800 to-red-600',
+    highlights: [
+      'Returned to Old Trafford 12 years after leaving',
+      'Scored on his second debut against Newcastle United',
+      'Became Manchester United\'s all-time top scorer',
+      'Scored hat-trick against Tottenham Hotspur in October 2021',
+      'Landmark 700th career club goal against Everton',
+      'Contract mutually terminated in November 2022 following interview with Piers Morgan',
+    ],
+    goals: '24',
+    apps: '54',
+    trophies: [],
+  },
+  {
+    id: 'al-nassr',
+    club: 'Al Nassr',
+    period: 'Pioneering the Saudi Era',
+    years: '2023–Present',
+    league: 'Saudi Pro League',
+    flag: '🇸🇦',
+    color: 'from-yellow-800 to-yellow-600',
+    highlights: [
+      'Signed a reported €200 million/year contract — the richest in football history',
+      'Scored 50+ goals in his debut season in Saudi Arabia',
+      'His arrival triggered a wave of global stars moving to the Saudi Pro League',
+      'Passed 850 career club goals',
+      'Became the most followed person on Instagram with 600M+ followers',
+      'Continues to break scoring records at age 38+',
+    ],
+    goals: '79+',
+    apps: '90+',
+    trophies: [],
+  },
+  {
+    id: 'portugal',
+    club: 'Portugal National Team',
+    period: 'National Icon',
+    years: '2003–Present',
+    league: 'International Football',
+    flag: '🇵🇹',
+    color: 'from-red-900 to-green-800',
+    highlights: [
+      'Made international debut aged 18 in 2003',
+      'Captained Portugal to UEFA Euro 2016 victory — their first major trophy',
+      'Coached Portugal from the sideline in the Euro 2016 final after being injured early',
+      'Won the inaugural UEFA Nations League in 2019',
+      'First player in history to score at five consecutive FIFA World Cups (2006–2022)',
+      'Holds the world record for most international goals (130+)',
+      'Holds the world record for most international caps for a European player (200+)',
+    ],
+    goals: '130+',
+    apps: '200+',
+    trophies: ['UEFA Euro 2016', 'UEFA Nations League 2019'],
+  },
+];
